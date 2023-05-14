@@ -26,3 +26,6 @@ def color_red(text):
 
 def color_green(text):
     return color(text, COLOR_GREEN)
+
+def color_yellow(text):
+    return color(text, COLOR_YELLOW)
