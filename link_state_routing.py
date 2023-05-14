@@ -95,12 +95,11 @@ def link_state_routing( graph: nx.Graph ) -> dict:
 
     return forwarding_table
 
-# Implement dijkstra algorithm to find the shortest path from a source node to every other node in the graph. The shortest path
-# is represented as a dictionary with the destination node as the key and a list of all the hops from the source node to the destination
-# node as the value.
+
 def dijkstra(graph: nx.Graph, src_node: str) -> dict:
     """
-    This function implements the dijkstra algorithm to find the shortest path from a source node to every other node in the graph
+    This function implements the dijkstra algorithm to find the shortest path from a source node to every other node in the graph.
+    @return: A dictionary containing the shortest path from the source node to every other node in the graph
     """
     # Initialize the shortest path dictionary
     shortest_path = { node: [np.inf, []] for node in graph.nodes() }
